@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Silja Mägi</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" >
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+    /* Style the heading and text */
+    body {
+      background-color: white;
+      font-family: 'montserrat';
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+     h1{
+    	padding-top:0;
+    	margin-top:0
+    } 
+    
+    h2{
+    	margin-bottom:-0.6em
+    }
+    
+    .button {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2em;
+  border: none;
+  margin-right: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+ 
+  
+}
+
+.button:hover{
+	background-color: #c0ac8e !important;
+	color: #003463;
+	font-weight: 600;
+
+}
+
+.button1 {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3em;
+  border: none;
+  margin-right: 10px;
+  margin-top: ;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  
+  
+}
+
+.button1:hover{
+	background-color: #c0ac8e !important;
+	color: #003463;
+	font-weight: 600;
+
+}
+
+    .dropdown {
+    	background-color: white;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+    	background-color: white;
+    color: #005493 !important;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+    	background-color: white;
+      color:  #005493 !important;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      font-size:0.8em;
+    }
+    
+ .dropdown-content a:hover {
+  color: #003463 !important;
+  
+}
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+     .menu a:hover {
+  color: #c0ac8e !important; 
+}
+    h1 {
+      font-family: 'montserrat', sans-serif;
+    }
+     .title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  padding-top: 2rem;
+  color: #003463;
+}
+
+.video-wrapper {
+	display: flex;
+	 justify-content: center;
+    
+    position: relative;
+    padding-top: 56.25%;
+    height: auto;
+    width: 45rem;
+  
+  }
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     padding-top: 3em;
+  }
+    
+ .alus {
+ 	padding-top: 3em;
+ width: 100%;
+ height: 100%;
+justify-content: center;
+ display:flex
+ }
+ 
+ .vasak {
+ width: 40%;
+ height: 100%;
+
+ float: right;
+ text-align: right;
+ }
+ 
+ .parem{
+ width: 30%;
+ height: 100%;
+
+ }
+ 
+ .jutt{
+
+ height: 100%;
+ font-size: 0.9em;
+ padding-top:0rem;
+ padding-left:1.5rem
+
+ }
+ 
+ .portee{
+
+
+
+ padding-top:0rem;
+ padding-right:1.5rem
+
+ }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	
+  position: relative;
+  max-width: 45rem;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #F9F9F9 ;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.2;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ .menu {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    
+    .menu a {
+    	font-size: 1.2em;
+      padding: 0 1.5rem;
+      color: #003463;
+      text-decoration: none;
+      font-family: 'montserrat', sans-serif;
+	 font-weight: 500;
+    }
+    
+   
+    .container1 {
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: right;
+        padding-right: 1.5rem;
+        
+    }
+
+
+      /* Add some space between the elements */
+      .container1 {
+      	float: right;
+		 text-align: right;
+        margin: 5rem 0;
+        padding-right: 1.5rem
+      }
+
+	
+ .riba {
+       	margin-left: 0.5em;
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: right;
+        padding-right: 1.5rem
+    }
+     .riba1 {
+       	margin-left: 0.5em;
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: left;
+        padding-right: 1.5rem
+    }
+ .columntwo {
+  float: left;
+  width: 16.66%;
+  }
+ @media only screen and (max-width: 1500px) {
+			
+		
+             .container1,
+            .jutt,
+            .container2,
+            .video-wrapper
+            {
+                width: 100%;
+            }
+ }
+
+@media (max-width: 768px) {
+  .alus {
+    flex-direction: column;
+    
+  }
+  .vasak {
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .parem {
+    width: 100%;
+  }
+  .menu a {
+      padding: 0 0.5rem;
+  .container1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      justify-content: center;
+  }
+ 
+ .container2 {
+ 	align-items: right;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      justify-content: left;
+  }
+   .video-wrapper {
+       
+      justify-content: left;
+  }
+ 
+}
+
+  </style>
+  </head>
+		<body>
+		<h1 class="title" style="text-align: center;">Silja Mägi portfoolio</h1>
+		<div class="menu">
+    <div class="dropdown">
+      <a href="https://kool.disain.eu/kkg21t/silja/proov/portfoolio.html">Portfoolio</a>
+      <div class="dropdown-content">
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/soomologo.html">Logo ja CVI </a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/ajakiri.html">Ajakiri</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/iluelab.html">Turundusmaterjalid</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/taimeapp.html">Rakendus</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/poster.html">Poster</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/joulukaart.html">Jõulukaart</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/car24.html">Logo</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/kalender.html">Lauakalender</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/bons.html">Pakend</a>
+      </div>
+      </div>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/kontakt.html">Kontakt</a>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/minust.html">Minust</a>
+  </div>
+<div class="alus">
+
+
+
+	
+	<div class="vasak">
+	<img class="portee" src="pildid/minuportree.png" alt="Silja Mägi portree" width="60%" height="auto">
+	</div>
+    <div class="parem">
+    <div class="jutt">
+	<h1>Tere!</h1>
+          <p>Minu nimi on Silja Mägi ja ma olen Saaremaal asuv graafiline disainer. Mulle on koguaeg meeldinud loomingulised tegevused ning 2019. aastal hakkasin tegelema fotograafia ja graafilise disainiga.<br>
+
+Alguses oli põhirõhk fotograafial ja graafiline disain sai vähem tähelepanu. Nüüd on aga asjad muutunud, eelkõige kuna läksin end täiendama  Kuressaare Ametikooli, graafilise disaini erialale. Avastasin, et olen võimeline palju rohkemaks, kui ise arvata oleks osanud. Lisaks oskuste arendamisele olen õppinud ka uusi, nagu näiteks graafika animeerimine. Alustasin õpinguid 2021. aastal ja lõpetan 2023. aastal. .</p>
+          
+ 
+    </div>      
+	</div>  
+	</div>
+	
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silja Mägi</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap');
+    html {
+    	
+    }
+    /* Add styles for responsive layout */
+    body {
+      justify-content: center;
+      font-family: 'montserrat';
+      font-size:1.3em;
+      font-weight: 100;
+    }
+    
+    .dropdown {
+    	background-color: white;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+    	background-color: white;
+    color: #005493 !important;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+    	background-color: white;
+      color:  #005493 !important;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      font-size:0.8em;
+    }
+    
+    .dropdown-content a:hover {
+  color: #c0ac8e !important; 
+}
+    .dropdown:hover .dropdown-content {
+      display: block;
+     
+    }
+    
+    .menu a:hover {
+  color: #c0ac8e !important; 
+}
+
+    .title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  color: #003463;
+}
+
+    .container {
+      max-width: 100%;/* Set maximum width for the container */
+      padding-bottom: 50px;
+    }
+    
+    .menu-container {
+      display: flex;
+      justify-content: center !important;
+      padding-bottom: 3rem;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    
+    .menu a {
+      padding: 0 1.5rem;
+      color: #003463;
+      font-size: 1.2em;
+      text-decoration: none;
+      font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+    }
+    
+    .image-grid-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image-grid img {
+      width: calc(33.33% - 5rem); /* Increase the width of the images */
+      height: auto;
+      margin: 2rem;
+      transition: transform 0.2s ease;
+      
+    }
+    
+    .image-grid img:hover {
+    	cursor: pointer;
+      transform: scale(1.1);
+    }
+    
+    .logo {
+    
+    	padding-bottom: 0em;
+     
+      align-items: center !important;
+			text-align: center;
+			justify-content: center;
+      align-content: center;
+    }
+      
+    .sidisain {
+    	margin-top: 2em;
+      width: 5em;
+      height: 5em;
+  }
+  
+  	
+    
+    @media only screen and (max-width: 1000px) {
+  .image-grid {
+    flex-direction: column; /* Change the layout to a column */
+  }
+  .image-grid img {
+    width: 100%; /* Make the images full width */
+    margin: 2rem 0; /* Add some space between the images */
+  }
+  .parem {
+    width: 100%;
+  }
+  .menu a {
+      padding: 0 0.5rem;
+  }
+  
+
+}
+  </style>
+</head>
+<body>
+<div class="logo">
+<img class="sidisain" src="pildid/sidisain.svg" alt="Silja logo">
+</div>
+  <h1 class="title" style="text-align: center;">Silja Mägi portfoolio</h1>
+  <div class="menu">
+    <div class="dropdown">
+      <a href="#">Portfoolio</a>
+      <div class="dropdown-content">
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/soomologo.html">Logo ja CVI </a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/ajakiri.html">Ajakiri</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/iluelab.html">Turundusmaterjalid</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/taimeapp.html">Rakendus</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/poster.html">Poster</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/joulukaart.html">Jõulukaart</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/car24.html">Logo</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/kalender.html">Lauakalender</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/bons.html">Pakend</a>
+      </div>
+      </div>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/kontakt.html">Kontakt</a>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/minust.html">Minust</a>
+  </div>
+  <div class="container">
+    <div class="image-grid">
+      <img src="pildid/soomomock.jpg" alt="Soomo logo" onclick="location.href='soomologo.html';">
+      <img src="pildid/ajakirimock.jpg" alt="Ettevõtte ajakiri" onclick="location.href='ajakiri.html';">
+      <img src="pildid/iluelabpostermock.jpg" alt="Ilu elab poster" onclick="location.href='iluelab.html';">
+    </div>
+    <div class="image-grid">
+      <img src="pildid/mobiili mockup.jpg" alt="Mobiili äpi mockup" onclick="location.href='taimeapp.html';">
+      <img src="pildid/postermock.png" alt="Postri mockup" onclick="location.href='poster.html';">
+      <img src="pildid/joulukaart.png" alt="Jõulukaardi mockup" onclick="location.href='joulukaart.html';">
+      
+    </div>
+    <div class="image-grid">
+    <img src="pildid/car24.jpg" alt="Car24 logo mockup" onclick="location.href='car24.html';">
+      <img src="pildid/lauakalendermock.jpg" alt="Lauakalendri pilt" onclick="location.href='kalender.html';">
+      <img src="pildid/bons.jpg" alt="Bönsi küpsise pakk" onclick="location.href='bons.html';">
+    </div>
+  </div>
+ 
+</body>
+</html>

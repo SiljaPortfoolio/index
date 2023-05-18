@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Silja Mägi</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" >
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+    /* Style the heading and text */
+    body {
+      background-color: white;
+      font-family: 'montserrat';
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+    
+    h2{
+    	margin-bottom:-0.6em
+    }
+    
+    .button {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2em;
+  border: none;
+  margin-right: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+ 
+  
+}
+
+.button:hover{
+	background-color: #c0ac8e !important;
+	color: #003463;
+	font-weight: 600;
+
+}
+
+.button1 {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3em;
+  border: none;
+  margin-right: 10px;
+  margin-top: ;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  
+  
+}
+
+.button1:hover{
+	background-color: #c0ac8e !important;
+	color: #003463;
+	font-weight: 600;
+
+}
+
+    .dropdown {
+    	background-color: white;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+    	background-color: white;
+    color: #005493 !important;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+    	background-color: white;
+      color:  #005493 !important;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      font-size:0.8em;
+    }
+    
+ .dropdown-content a:hover {
+  color: #003463 !important;
+  
+}
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+     .menu a:hover {
+  color: #c0ac8e !important; 
+}
+    h1 {
+      font-family: 'montserrat', sans-serif;
+    }
+     .title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  padding-top: 2rem;
+  color: #003463;
+}
+
+.video-wrapper {
+	display: flex;
+	 justify-content: center;
+    
+    position: relative;
+    padding-top: 56.25%;
+    height: auto;
+    width: 45rem;
+  
+  }
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     padding-top: 3em;
+  }
+    
+ .alus {
+ width: 100%;
+ height: 100%;
+justify-content: center;
+ display:flex
+ }
+ 
+ .vasak {
+ width: 40%;
+ height: 100%;
+
+ float: right;
+ text-align: right;
+ }
+ 
+ .parem{
+ width: 40%;
+ height: 100%;
+
+ }
+ 
+ .jutt{
+ width: 45rem;
+ height: 100%;
+ font-size: 0.9em;
+ padding-top:3rem;
+ padding-left:1.5rem
+
+ }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	
+  position: relative;
+  max-width: 45rem;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #F9F9F9 ;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.2;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ .menu {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    
+    .menu a {
+    	font-size: 1.2em;
+      padding: 0 1.5rem;
+      color: #003463;
+      text-decoration: none;
+      font-family: 'montserrat', sans-serif;
+	 font-weight: 500;
+    }
+    
+   
+    .container1 {
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: right;
+        padding-right: 1.5rem;
+        
+    }
+
+
+      /* Add some space between the elements */
+      .container1 {
+      	float: right;
+		 text-align: right;
+        margin: 5rem 0;
+        padding-right: 1.5rem
+      }
+
+	
+ .riba {
+       	margin-left: 0.5em;
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: right;
+        padding-right: 1.5rem
+    }
+     .riba1 {
+       	margin-left: 0.5em;
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: left;
+        padding-right: 1.5rem
+    }
+ .columntwo {
+  float: left;
+  width: 16.66%;
+  }
+ @media only screen and (max-width: 1500px) {
+			
+		
+             .container1,
+            .jutt,
+            .container2,
+            .video-wrapper
+            {
+                width: 100%;
+            }
+ }
+
+@media (max-width: 768px) {
+  .alus {
+    flex-direction: column;
+    
+  }
+  .vasak {
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .parem {
+    width: 100%;
+  }
+  .menu a {
+      padding: 0 0.5rem;
+  .container1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      justify-content: center;
+  }
+ 
+ .container2 {
+ 	align-items: right;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      justify-content: left;
+  }
+   .video-wrapper {
+       
+      justify-content: left;
+  }
+ 
+}
+
+  </style>
+  </head>
+		<body>
+		<h1 class="title" style="text-align: center;">Silja Mägi portfoolio</h1>
+		<div class="menu">
+    <div class="dropdown">
+      <a href="https://kool.disain.eu/kkg21t/silja/proov/portfoolio.html">Portfoolio</a>
+      <div class="dropdown-content">
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/soomologo.html">Logo ja CVI </a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/ajakiri.html">Ajakiri</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/iluelab.html">Turundusmaterjalid</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/taimeapp.html">Rakendus</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/poster.html">Poster</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/joulukaart.html">Jõulukaart</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/car24.html">Logo</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/kalender.html">Lauakalender</a>
+        <a href="https://kool.disain.eu/kkg21t/silja/proov/bons.html">Pakend</a>
+      </div>
+      </div>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/kontakt.html">Kontakt</a>
+    <a href="https://kool.disain.eu/kkg21t/silja/proov/minust.html">Minust</a>
+  </div>
+<div class="alus">
+
+
+<div class="riba">
+</div>
+	
+	<div class="vasak">
+	<div class="container1">
+  <!-- Container for the image gallery -->
+		<div class="container">
+
+  <!-- Full-width images with number text -->
+			<div class="mySlides">
+    		<div class="numbertext">1 / 8</div>
+    	<a href="pildid/soomomock.jpg" data-lightbox="soomo">
+      <img src="pildid/soomomock.jpg" style="width:100%" data-title="Image #1" class="lightbox-image">
+       </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">2 / 8</div>
+    <a href="pildid/logolugu.jpg"  data-lightbox="soomo">
+      <img src="pildid/logolugu.jpg" style="width:100%" data-title="Image #2" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">3 / 8</div>
+    <a href="pildid/soomologo.jpg" data-lightbox="soomo">
+      <img src="pildid/soomologo.jpg" style="width:100%" data-title="Image #3" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">4 / 8</div>
+    <a href="pildid/soomohorisontaal.jpg" data-lightbox="soomo">
+      <img src="pildid/soomohorisontaal.jpg" style="width:100%" data-title="Image #4" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">5 / 8</div>
+    <a href="pildid/soomologomark.jpg" data-lightbox="soomo">
+      <img src="pildid/soomologomark.jpg" style="width:100%" data-title="Image #5" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+			 <div class="numbertext">6 / 8</div>
+    <a href="pildid/soomovarv.jpg" data-lightbox="soomo">
+      <img src="pildid/soomovarv.jpg" style="width:100%" data-lightbox="soomo" data-title="Image #6" class="lightbox-image">
+      </a>
+			</div>
+					<div class="mySlides">
+			 <div class="numbertext">7 / 8</div>
+    <a href="pildid/soomovisiitkaart.jpg" data-lightbox="soomo">
+      <img src="pildid/soomovisiitkaart.jpg" style="width:100%" data-lightbox="soomo" data-title="Image #6" class="lightbox-image">
+      </a>
+			</div>
+					<div class="mySlides">
+			 <div class="numbertext">8 / 8</div>
+    <a href="pildid/soomopais.png" data-lightbox="soomo">
+      <img src="pildid/soomopais.png" style="width:100%" data-lightbox="soomo" data-title="Image #6" class="lightbox-image">
+      </a>
+			</div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+
+  <!-- Thumbnail images -->
+		<div class="row">
+		 <div class="column">
+      <img class="demo cursor" src="pildid/soomomock.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+		 </div>
+		 <div class="column">
+      <img class="demo cursor" src="pildid/logolugu.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    	</div>
+    	<div class="column">
+      <img class="demo cursor" src="pildid/soomologo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+		 </div>
+    	<div class="column">
+      <img class="demo cursor" src="pildid/soomohorisontaal.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    	</div>
+		 <div class="column">
+      <img class="demo cursor" src="pildid/soomologomark.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    	</div>
+    	<div class="column">
+      <img class="demo cursor" src="pildid/soomovarv.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+	 </div>
+	</div>
+		<div class="row">
+      <div class="columntwo">
+      <img class="demo cursor" src="pildid/soomovisiitkaart.jpg" style="width:100%" onclick="currentSlide(7)" alt="Muuda mind">
+    	</div>
+    	<div class="columntwo">
+    	 <img class="demo cursor" src="pildid/soomopais.png" style="width:100%" onclick="currentSlide(8)" alt="Muuda mind">
+    	</div>
+	</div>
+	<div class="video-wrapper">
+		<iframe class="video" src="https://www.youtube.com/embed/iW-K5yblDc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
+    </div>
+    </div>
+    
+    <div class="parem">
+    <div class="jutt">
+	<h1>Soomo logo ja CVI</h1>
+	<h2>Lähteülesanne</h2>
+	<p>Luua väikepaate valmistavale ettevõttele OÜ Soomo logo ja CVI.</p>
+	<h2>Kontseptsioon</h2>
+          <p>Soomo logos on ühendatud ettevõtte nimi ja logomärk. Logomärk koosneb Soomo kõige esimese paadi mudeli esiotsa kujutisest ja väiksetest lainetest, mis sümboliseerib merd/vett. Logo on sinistes toonides, mis seostub mere, kindluse, usaldusväärsusega.
+Koostatud on ka CVI, koos kasutusnäidiste ja logo animatsiooniga.</p>
+<a href="https://indd.adobe.com/view/9c1e851b-c716-4ad0-901d-1f687f63006b" target="_blank">
+  <button class="button1">CVI</button>
+</a>
+
+<h2>Juhendajad</h2>
+<p>Valmar Voolaid<br>
+Tiiu Tuhkanen<br>
+Kristiina Varimets</p>
+   <h2>Mockup</h2>
+   <p>Telekaga mockup ja visiitkaardi mockup on tehtud Blenderis.<br>
+  
+   <a href="https://www.freepik.com/premium-psd/round-neck-t-shirts-mockup_14323608.htm#query=woman%20t-shirt%20mockup&position=0&from_view=search&track=robertav1_2_sidr" target="blank" style="text-decoration:none; color:#003463;">T-särk</a></p>
+   <h2>Kasutatud pildimaterjal</h2>
+   <p><a href="https://www.pexels.com/photo/ocean-under-cloudy-sky-3968130/" target="blank" style="text-decoration:none; color:#003463;">Facebook päis vasak pilt</a><br>
+   <a href="https://www.pexels.com/photo/white-boat-on-sea-1106412/" target="blank" style="text-decoration:none; color:#003463;">Facebook päis parem pilt</a><br></p>
+       
+
+  <button class="button" onclick="location.href='ajakiri.html';">Järgmine</button>
+
+    </div> 
+     <div class="riba">
+</div>
+	</div> 
+
+<!--
+
+<h1>Soomo Logo</h1>
+         
+	<h2>Lähte ülesanne</h2>
+	<p> Luua väikepaate valmistavale ettevõttele logo ja CVI</p>
+	<h2>Konseptsioon</h2>
+          <p>Soomo logos on ühendatud ettevõtte nimi ja logomärk. Logomärk koosneb Soomo kõige esimese paadi mudeli esiotsa kujutisest ja väiksetest lainetest, mis sümboliseerib merd/vett. Logo on sinistes toonides, mis seostub mere, kindluse, usaldusväärsusega.
+Koostatud on ka CVI, koos kasutusnäidiste ja logo animatsiooniga.</p>
+          <h2>Juhendaja</h2>
+          <p>Tiiu Tuhkanen</p>
+          <p>Valmar Voolaid</p>
+          <h2>Mockup</h2>
+          <p>Telekaga mockup ja visiitkaardi mockup on tehtud Blenderis.</p>
+          <p><a href="http://www.siljaportfoolio.weebly.com" target="blank" style="text-decoration:none; color:#003463;">Facebook päis vasak pilt</a></p>
+          <p><a href="http://www.siljaportfoolio.weebly.com" target="blank" style="text-decoration:none; color:#003463;">Facebook päis parem pilt</a></p>
+          <p><a href="http://www.siljaportfoolio.weebly.com" target="blank" style="text-decoration:none; color:#003463;">T-särk</a></p>
+
+-->
+
+
+ <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'showImageNumberLabel': false
+  })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>
