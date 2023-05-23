@@ -72,7 +72,25 @@ font-weight:600;
       font-family: 'montserrat', sans-serif;
       margin-bottom: -3px;
     }
+h3 {	font-size: 1.2em;
+font-weight:600;
+      font-family: 'montserrat', sans-serif;
+      margin-bottom: -0.8em;
+    }
+ 
+.custom-h3 {
+	 display: flex;
+  flex-wrap: wrap;
+  line-height: 0.9; /* Adjust this value to make the line spacing smaller */
+}
 
+.custom-h3 .line-break {
+  display: none; /* Hide the line break within the h3 */
+}
+
+.custom-p {
+  margin-top: 1.3em; /* Adjust this value as needed to set the desired space between custom h3 and custom p */
+}
 .video-wrapper {
 	display: block;
     display: inline-block;
@@ -117,13 +135,18 @@ font-weight:600;
  
 
  }
- .rollid{
+.rollid{
+ 		width: 33%;
+ height: 100%;
  margin-top:
  }
  .rollidd{
+ 	width: 33%;
+ height: 100%;
  padding-left:2em;
   margin-top:
  }
+ 
  
  .rollidalus{
 display:flex
@@ -454,8 +477,8 @@ display:flex
            <div class="rollidalus">
           <div class="rollid">
           
-          <h3>Peatoimetaja, <br>makett ja kujundus</h3>
-          Silja Mägi
+           <h3 class="custom-h3">Peatoimetaja, makett ja kujundus</h3>
+<p class="custom-p">Silja Mägi</p>
            
             <h3>Keeletoimetaja</h3>
             Maiju Zuping
