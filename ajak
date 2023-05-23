@@ -337,7 +337,21 @@ display:flex
                 width: 90%;
             }
  }
-
+ .logo {
+    
+    	padding-bottom: 0em;
+     
+      align-items: center !important;
+			text-align: center;
+			justify-content: center;
+      align-content: center;
+    }
+      
+    .sidisain {
+    	margin-top: 2em;
+      width: 5em;
+      height: 5em;
+  }
 @media (max-width: 768px) {
   .alus {
     flex-direction: column;
