@@ -154,6 +154,9 @@ justify-content: center;
  align-items: center;
  flex-direction: row;
 justify-content: center;
+	 align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Add this property */
  
  }
  .vasak {
@@ -290,9 +293,14 @@ cursor: pointer;
   text-decoration: none; /* Remove underline */
   color: #c0ac8e; /* Set desired color for links on hover */
 }
-
+.vasak,
+.parem {
+  width: 50%; /* Update the width to 50% */
+  text-align: center;
+}
   
  @media only screen and (max-width: 1500px) {
+	 
 			
 		
              .container1,
@@ -302,9 +310,15 @@ cursor: pointer;
             {
                 width: 100%;
             }
+	 .vasak,
+.parem {
+  width: 50%; /* Update the width to 50% */
+  text-align: center;
+}
  }
 
 @media (max-width: 768px) {
+	
   .alus {
     flex-direction: column;
     
