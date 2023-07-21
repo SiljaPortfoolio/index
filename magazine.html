@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="pildid/favi.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" >
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+    /* Style the heading and text */
+    body {
+      
+      font-family: 'montserrat';
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+	a {
+	text-decoration: none;
+}
+  
+    h2{
+    	margin-bottom:-0.6em
+    }
+      .dropdown {
+    	background-color: white;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+    	background-color: white;
+    color: #005493 !important;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+    	background-color: white;
+      color:  #005493 !important;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      font-size:0.8em;
+    }
+    
+    .dropdown-content a:hover {
+  color: #003463 !important;
+  
+}
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+     .menu a:hover {
+  color: #c0ac8e !important; 
+}
+    
+    h1 {
+      font-family: 'montserrat', sans-serif;
+    }
+     .title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+ 
+  color: #003463;
+}
+
+h3 {	font-size: 1.2em;
+font-weight:600;
+      font-family: 'montserrat', sans-serif;
+      margin-bottom: -3px;
+    }
+h3 {	font-size: 1.2em;
+font-weight:600;
+      font-family: 'montserrat', sans-serif;
+      margin-bottom: -0.8em;
+    }
+ 
+.custom-h3 {
+	 display: flex;
+  flex-wrap: wrap;
+  line-height: 0.9; /* Adjust this value to make the line spacing smaller */
+}
+
+.custom-h3 .line-break {
+  display: none; /* Hide the line break within the h3 */
+}
+
+.custom-p {
+  margin-top: 1.3em; /* Adjust this value as needed to set the desired space between custom h3 and custom p */
+}
+.video-wrapper {
+	display: block;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-top: 56.25%;
+    height: auto;
+    width: 45rem;
+    left: 50%;
+  }
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: -50%;
+    
+  }
+    
+ .alus {
+ width: 100%;
+ height: 100%;
+ justify-content: center;
+ display:flex
+ }
+ 
+ .vasak {
+ width: 40%;
+ height: 100%;
+
+ float: right;
+ text-align: right;
+ }
+ 
+ .parem{
+ width: 40%;
+ height: 100%;
+
+ 
+
+ }
+.rollid{
+ 		width: 33%;
+ height: 100%;
+ margin-top:
+ }
+ .rollidd{
+ 	width: 33%;
+ height: 100%;
+ padding-left:2em;
+  margin-top:
+ }
+ 
+ 
+ .rollidalus{
+display:flex
+ }
+ 
+ .jutt{
+ width: 45rem;
+ height: 100%;
+ font-size: 0.9em;
+ padding-top:3rem;
+ padding-left:1.5rem
+ }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	
+  position: relative;
+  max-width: 45rem;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #F9F9F9 ;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.2;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ .menu {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    
+    .menu a {
+    	font-size: 1.2em;
+      padding: 0 1.5rem;
+      color: #003463;
+      text-decoration: none;
+      font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+    }
+    
+   
+    .container1 {
+        display: flex;
+        flex-direction: column; /* Change the layout to a column */
+        align-items: right;
+        padding-right: 1.5rem
+    }
+
+
+      /* Add some space between the elements */
+      .container1 {
+      	float: right;
+		 text-align: right;
+        margin: 5rem 0;
+        padding-right: 1.5rem
+      }
+.button {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2em;
+  border: none;
+  margin-right: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.button:hover{
+	background-color: #c0ac8e;
+	color: #003463;
+	font-weight: 600;
+	
+}
+.button1 {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3em;
+  border: none;
+  margin-right: 10px;
+  margin-top: ;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  
+  
+}
+
+.button1:hover{
+	background-color: #c0ac8e !important;
+	color: #003463;
+	font-weight: 600;
+
+}
+
+ @media only screen and (max-width: 1500px) {
+			
+		
+            .container1,
+            .jutt,
+            .video-wrapper {
+                width: 100%;
+            }
+ }
+ .logo {
+    
+    	padding-bottom: 0em;
+     
+      align-items: center !important;
+			text-align: center;
+			justify-content: center;
+      align-content: center;
+    }
+      
+    .sidisain {
+    	margin-top: 2em;
+      width: 5em;
+      height: 5em;
+  }
+@media (max-width: 768px) {
+  .alus {
+    flex-direction: column;
+    
+  }
+	.rollidalus {
+		flex-direction: column;
+	}
+	.rollidd {
+		 padding-left:0em;
+	}
+  .vasak {
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .parem {
+    width: 100%;
+  }
+  .menu a {
+      padding: 0 0.5rem;
+  }
+  .container1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+ 
+}
+
+  </style>
+  </head>
+		<body>
+			<a href="https://siljaportfoolio.github.io/eng">
+  <div class="logo">
+    <img class="sidisain" src="pildid/sidisain.svg" alt="Silja logo">
+  </div>
+  <h1 class="title" style="text-align: center;">Silja Mägi portfolio</h1>
+</a>
+
+	 <div class="menu">
+    <div class="dropdown">
+      <a href="#">Projects</a>
+      <div class="dropdown-content">
+       <a href="https://siljaportfoolio.github.io/soomo_eng.html">Soomo logo and CVI </a>
+        <a href="https://siljaportfoolio.github.io/magazine.html">Soomo magazine</a>
+        <a href="https://siljaportfoolio.github.io/iluelab_eng.html">Ilu Elab marketing materials</a>
+        <a href="https://siljaportfoolio.github.io/plantapp.html">Plant app</a>
+        <a href="https://siljaportfoolio.github.io/poster_eng.html">Deep Summer Fest poster</a>
+        <a href="https://siljaportfoolio.github.io/xmas.html">KAK Christmas card</a>
+        <a href="https://siljaportfoolio.github.io/car24_eng.html">Car24 logo</a>
+        <a href="https://siljaportfoolio.github.io/calendar.html">Desk calendar</a>
+        <a href="https://siljaportfoolio.github.io/bons_eng.html">Böns package</a>
+	      <a href="https://siljaportfoolio.github.io/kaijala_eng.html">Käi jala campaign</a>
+        <a href="https://siljaportfoolio.github.io/bunpackage.html">Packaging for bun filling</a>
+        <a href="https://siljaportfoolio.github.io/soomomarketing.html">Soomo marketing materials</a>
+      </div>
+      </div>
+	  <a href="https://siljaportfoolio.github.io/animation.html">Animation</a>
+    <a href="https://siljaportfoolio.github.io/contact.html">Contack</a>
+    <a href="https://siljaportfoolio.github.io/about.html">About me</a>
+  </div>
+<div class="alus">
+
+
+
+	
+	<div class="vasak">
+	<div class="container1">
+  <!-- Container for the image gallery -->
+		<div class="container">
+
+  <!-- Full-width images with number text -->
+			<div class="mySlides">
+    		<div class="numbertext">1 / 6</div>
+    	<a href="pildid/ajakirimock.jpg" data-lightbox="soomo">
+      <img src="pildid/ajakirimock.jpg" style="width:100%" data-title="Image #1" class="lightbox-image">
+       </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">2 / 6</div>
+    <a href="pildid/ajakirimock1.jpg"  data-lightbox="soomo">
+      <img src="pildid/ajakirimock1.jpg" style="width:100%" data-title="Image #2" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">3 / 6</div>
+    <a href="pildid/ajakiri_varustus.jpg" data-lightbox="soomo">
+      <img src="pildid/ajakiri_varustus.jpg" style="width:100%" data-title="Image #3" class="lightbox-image">
+      </a>
+			</div>
+
+			<div class="mySlides">
+    		<div class="numbertext">4 / 6</div>
+    <a href="pildid/ajakiri_reklaam.jpg" data-lightbox="soomo">
+      <img src="pildid/ajakiri_reklaam.jpg" style="width:100%" data-title="Image #4" class="lightbox-image">
+      </a>
+			</div>
+
+	
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+
+  <!-- Thumbnail images -->
+		<div class="row">
+		 <div class="column">
+      <img class="demo cursor" src="pildid/ajakirimock.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+		 </div>
+		 <div class="column">
+      <img class="demo cursor" src="pildid/ajakirimock1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    	</div>
+    	<div class="column">
+      <img class="demo cursor" src="pildid/ajakiri_varustus.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+		 </div>
+    	<div class="column">
+      <img class="demo cursor" src="pildid/ajakiri_reklaam.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    	</div>
+
+	</div>
+	</div>
+	
+	 <!--
+	<div class="video-wrapper">
+		<iframe class="video" src="https://www.youtube.com/embed/iW-K5yblDc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	 -->
+	
+    </div>
+    </div>
+    <div class="parem">
+    <div class="jutt">
+	<h1>Soomo magazine</h1>
+	
+	
+          <p>A project made as a group work. The magazine is made based on my model. When creating it, I paid attention to simplicity, cleanliness and clarity. Pages designed by me are front and back cover, maritime safety, Kuressaare Trade school advertisement.</p>
+          <a href="https://heyzine.com/flip-book/b36fe95631.html" target="_blank">
+  <button class="button1">Vaata ajakirja</button>
+</a>
+         
+           <h2>Roles</h2>
+           <div class="rollidalus">
+          <div class="rollid">
+          
+           <h3 class="custom-h3">Editor-in-chief, layout and design</h3>
+<p class="custom-p">Silja Mägi</p>
+           
+            <h3>Language editor</h3>
+            <p>Maiju Zuping</p>
+              <h3>Illustrations</h3>
+           <p> Helena Talk<br>Silja Mägi</p>
+          </div>
+         
+         <div class="rollidd">
+            <h3>Texts</h3>
+            <p>Helena Talk<br>Mari-Liis Nellis<br>Tiina Karvanen<br>Tuuli Pupart</p>
+          
+            
+            <h3>Photographers</h3>
+        <p>  Mari-Liis Nellis<br>
+            Silja Mägi<br>
+            Valmar Voolaid<br></p>
+            
+            </div>
+            <div class="rollidd">
+            <h3>Designers</h3>
+           <p> Helena Talk<br>
+            Mari-Liis Nellis<br>
+            Merily Sepp<br>
+            Silja Mägi<br>
+            Tiina Karvanen<br>
+            Tuuli Pupart</p>
+             </div>
+              </div>
+             
+          
+          <h2>Mockup</h2>
+          <p>
+          <a href="https://mockups-design.com/free-us-half-fold-brochure-mockup/" target="blank" style="text-decoration:none; color:#003463;">Cover and content mockup (mockups-design.com)</a><br>
+          </p>
+
+          
+  <button class="button" onclick="location.href='soomologo.html';">Eelmine</button>
+  <button class="button" onclick="location.href='iluelab.html';">Järgmine</button>
+
+    </div>      
+	</div>  
+
+ <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'showImageNumberLabel': false
+  })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>
