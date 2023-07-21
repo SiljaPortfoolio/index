@@ -172,7 +172,7 @@
   </style>
 </head>
 <body>
-	 <a href="eng.html">In English</a>
+	
 
      <button id="btn-eng" class="keel" onclick="location.href='eng.html';" disabled>Eng</button>
   <button id="btn-est" class="keel" onclick="location.href='index.html';" disabled>Est</button>
@@ -234,16 +234,19 @@
       <img src="pildid/soomorollup.jpg" alt="Rollupi mockup" onclick="location.href='soomoreklaam.html';">
     </div>
   </div>
-
-	document.addEventListener('DOMContentLoaded', function () {
-    // Kui leht laetakse, kontrollime, milline leht see on ja keelame vastava nupu
-    const currentUrl = window.location.pathname;
-    if (currentUrl.includes('eng.html')) {
+<script>
+    // JavaScripti kood siin
+    document.addEventListener('DOMContentLoaded', function () {
+      // Kui leht laetakse, kontrollime, milline leht see on ja lubame vastava nupu
+      const currentUrl = window.location.pathname;
+      if (currentUrl.includes('eng.html')) {
         document.getElementById('btn-eng').disabled = true;
-    } else {
+      } else {
         document.getElementById('btn-est').disabled = true;
-    }
-});
+      }
+    });
+  </script>
+
 
 </body>
 </html>
