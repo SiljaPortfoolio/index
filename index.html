@@ -173,7 +173,7 @@
 </head>
 <body>
 	 <button class="keel" onclick="location.href='eng.html';">Eng</button>
-  <button class="keel" onclick="location.href='est.html';">Est</button>
+  <button class="keel" onclick="location.href='index.html';">Est</button>
 
 <a href="https://siljaportfoolio.github.io">
   <div class="logo">
@@ -231,6 +231,16 @@
       <img src="pildid/soomorollup.jpg" alt="Rollupi mockup" onclick="location.href='soomoreklaam.html';">
     </div>
   </div>
-	
+
+	document.addEventListener('DOMContentLoaded', function () {
+    // Kui leht laetakse, kontrollime, milline leht see on ja keelame vastava nupu
+    const currentUrl = window.location.pathname;
+    if (currentUrl.includes('eng.html')) {
+        document.getElementById('btn-eng').disabled = true;
+    } else {
+        document.getElementById('btn-est').disabled = true;
+    }
+});
+
 </body>
 </html>
