@@ -327,31 +327,7 @@
 </a>
 
   
-  <div class="menu">
-    <div class="dropdown">
-      <a href="#">Projects</a>
-      <div class="dropdown-content">
-<a href="https://siljaportfoolio.github.io/kvklogo_eng.html">KVK logo and CVI </a>
-        <a href="https://siljaportfoolio.github.io/car24_eng.html">Car24 logo</a>
-        <a href="https://siljaportfoolio.github.io/sidisain_eng.html">Sidisain logo</a>
-       <a href="https://siljaportfoolio.github.io/soomo_eng.html">Soomo logo and CVI </a>
-        <a href="https://siljaportfoolio.github.io/magazine.html">Soomo magazine</a>
-        <a href="https://siljaportfoolio.github.io/iluelab_eng.html">Ilu Elab marketing materials</a>
-        <a href="https://siljaportfoolio.github.io/plantapp.html">Plant app</a>
-        <a href="https://siljaportfoolio.github.io/poster_eng.html">Deep Summer Fest poster</a>
-        <a href="https://siljaportfoolio.github.io/xmas.html">KAK Christmas card</a>
-        <a href="https://siljaportfoolio.github.io/cover.html">Magazine cover</a>
-        <a href="https://siljaportfoolio.github.io/calendar.html">Desk calendar</a>
-        <a href="https://siljaportfoolio.github.io/bons_eng.html">Böns package</a>
-	      <a href="https://siljaportfoolio.github.io/kaijala_eng.html">Käi jala campaign</a>
-        <a href="https://siljaportfoolio.github.io/bunpackage.html">Packaging for bun filling</a>
-        <a href="https://siljaportfoolio.github.io/soomomarketing.html">Soomo marketing materials</a>
-      </div>
-      </div>
-	  <a href="https://siljaportfoolio.github.io/animation.html">Animation</a>
-    <a href="https://siljaportfoolio.github.io/contact.html">Contack</a>
-    <a href="https://siljaportfoolio.github.io/about.html">About me</a>
-  </div>
+ <div id="menu-container"></div>
 <div class="alus">
 
 
@@ -498,6 +474,19 @@ function showSlides(n) {
   })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+  // Function to set the selected menu item in local storage
+  function setMenu(menuItem) {
+    localStorage.setItem('selectedMenuItem', menuItem);
+  }
 
+  // Function to highlight the selected menu item on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    var selectedMenuItem = localStorage.getItem('selectedMenuItem');
+    if (selectedMenuItem) {
+      document.querySelector('.menu a[href="' + selectedMenuItem + '"]').classList.add('selected');
+    }
+  });
+</script>
 </body>
 </html>
