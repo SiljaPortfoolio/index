@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silja Mägi</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap');
+    html {
+    	
+    }
+    /* Add styles for responsive layout */
+    body {
+      justify-content: center;
+      font-family: 'montserrat';
+      font-size:1.3em;
+      font-weight: 100;
+    }
+    a {
+	text-decoration: none;
+}
+  
+    .dropdown {
+    	background-color: white;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+    	background-color: white;
+    color: #005493 !important;
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+    	background-color: white;
+      color:  #005493 !important;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      font-size:0.8em;
+    }
+    
+    .dropdown-content a:hover {
+  color: #c0ac8e !important; 
+}
+    .dropdown:hover .dropdown-content {
+      display: block;
+     
+    }
+    
+    .menu a:hover {
+  color: #c0ac8e !important; 
+}
+
+    .title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  color: #003463;
+}
+
+    .container {
+      max-width: 100%;/* Set maximum width for the container */
+      padding-bottom: 50px;
+    }
+    
+    .menu-container {
+      display: flex;
+      justify-content: center !important;
+      padding-bottom: 3rem;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    
+    .menu a {
+      padding: 0 1.5rem;
+      color: #003463;
+      font-size: 1.2em;
+      text-decoration: none;
+      font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+    }
+    
+    .image-grid-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image-grid img {
+      width: calc(33.33% - 5rem); /* Increase the width of the images */
+      height: auto;
+      margin: 2rem;
+      transition: transform 0.2s ease;
+      
+    }
+    
+    .image-grid img:hover {
+    	cursor: pointer;
+      transform: scale(1.1);
+    }
+    
+    .logo {
+    
+    	padding-bottom: 0em;
+     
+      align-items: center !important;
+			text-align: center;
+			justify-content: center;
+      align-content: center;
+    }
+      
+    .sidisain {
+    	margin-top: 2em;
+      width: 5em;
+      height: 5em;
+  }
+
+	  .keel {
+  background-color: #003463;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2em;
+  border: none;
+  margin-right: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.keel:hover{
+	background-color: #c0ac8e;
+	color: #003463;
+	font-weight: 600;
+  
+  	
+    
+    @media only screen and (max-width: 1000px) {
+  .image-grid {
+    flex-direction: column; /* Change the layout to a column */
+  }
+  .image-grid img {
+    width: 100%; /* Make the images full width */
+    margin: 2rem 0; /* Add some space between the images */
+  }
+  .parem {
+    width: 100%;
+  }
+  .menu a {
+      padding: 0 0.5rem;
+  }
+  
+
+}
+
+  </style>
+</head>
+<body>
+  <button id="btn-eng" class="keel" onclick="changeLanguage('eng.html');">Eng</button>
+
+  <a href="https://siljaportfoolio.github.io">
+    <div class="logo">
+      <img class="sidisain" src="pildid/sidisain.svg" alt="Silja logo">
+    </div>
+    <h1 class="title" style="text-align: center;">Silja Mägi portfoolio</h1>
+  </a>
+
+  <div class="menu">
+    <div class="dropdown">
+      <a href="#" onclick="setMenu('projects');">Projektid</a>
+      <div class="dropdown-content">
+        <!-- Your project links here -->
+      </div>
+    </div>
+    <a href="https://siljaportfoolio.github.io/animatsioon.html">Animatsioon</a>
+    <a href="https://siljaportfoolio.github.io/kontakt.html">Kontakt</a>
+    <a href="https://siljaportfoolio.github.io/minust.html">Minust</a>
+  </div>
+
+  <!-- Rest of your content -->
+
+  <script>
+    // Function to set the selected menu item in local storage
+    function setMenu(menuItem) {
+      localStorage.setItem('selectedMenuItem', menuItem);
+    }
+
+    // Function to change language and set the selected menu item
+    function changeLanguage(languageUrl) {
+      setMenu(''); // Clear the selected menu item when changing language
+      location.href = languageUrl;
+    }
+
+    // Function to highlight the selected menu item on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      var selectedMenuItem = localStorage.getItem('selectedMenuItem');
+      if (selectedMenuItem) {
+        document.querySelector('.menu a[href="' + selectedMenuItem + '"]').classList.add('selected');
+      }
+    });
+  </script>
+</body>
+</html>
