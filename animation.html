@@ -313,18 +313,12 @@ justify-content: center;
 </div>
  
 <script>
-  // Function to set the selected menu item in local storage
-  function setMenu(menuItem) {
-    localStorage.setItem('selectedMenuItem', menuItem);
-  }
-
-  // Function to highlight the selected menu item on page load
-  document.addEventListener('DOMContentLoaded', function () {
-    var selectedMenuItem = localStorage.getItem('selectedMenuItem');
-    if (selectedMenuItem) {
-      document.querySelector('.menu a[href="' + selectedMenuItem + '"]').classList.add('selected');
-    }
-  });
-</script>
+    // Laadige menüü HTML-fail
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
