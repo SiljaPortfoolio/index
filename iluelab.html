@@ -340,31 +340,7 @@
   </div>
   <h1 class="title" style="text-align: center;">Silja Mägi portfoolio</h1>
 </a>
-			<div class="menu">
-     <div class="dropdown">
-      <a href="#">Projektid</a>
-      <div class="dropdown-content">
-     <a href="https://siljaportfoolio.github.io/kvklogo.html">KVK logo ja CVI </a>
-        <a href="https://siljaportfoolio.github.io/car24.html">Car24 logo</a>
-        <a href="https://siljaportfoolio.github.io/sidisain.html">Sidisain logo</a>
-        <a href="https://siljaportfoolio.github.io/soomologo.html">Soomo logo ja CVI </a>
-        <a href="https://siljaportfoolio.github.io/ajakiri.html">Soomo ajakiri</a>
-        <a href="https://siljaportfoolio.github.io/iluelab.html">Ilu Elab turundusmaterjalid</a>
-        <a href="https://siljaportfoolio.github.io/taimeapp.html">Taime rakendus</a>
-        <a href="https://siljaportfoolio.github.io/poster.html">Deep Summer Fest poster</a>
-        <a href="https://siljaportfoolio.github.io/joulukaart.html">KAK jõulukaart</a>
-        <a href="https://siljaportfoolio.github.io/maakodu.html">Maakodu kaanelahendus</a>
-        <a href="https://siljaportfoolio.github.io/kalender.html">Lauakalender</a>
-        <a href="https://siljaportfoolio.github.io/bons.html">Böns pakend</a>
-	      <a href="https://siljaportfoolio.github.io/kaijala.html">Käi jala kampaania</a>
-        <a href="https://siljaportfoolio.github.io/krunn.html">Pakend krunnitäidisele</a>
-        <a href="https://siljaportfoolio.github.io/soomoreklaam.html">Soomo turundusmaterjalid</a>
-      </div>
-      </div>
-	  <a href="https://siljaportfoolio.github.io/animatsioon.html">Animatsioon</a>
-    <a href="https://siljaportfoolio.github.io/kontakt.html">Kontakt</a>
-    <a href="https://siljaportfoolio.github.io/minust.html">Minust</a>
-  </div>
+		 <div id="menuuest-container"></div>
 		
 <div class="alus">
 
@@ -553,6 +529,14 @@ function showSlides(n) {
   })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    // Laadige menüü HTML-fail
+    fetch('menuuest.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menuuest-container').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
