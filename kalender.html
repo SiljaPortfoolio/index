@@ -567,6 +567,14 @@ function showSlides(n) {
   })
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    // Laadige menüü HTML-fail
+    fetch('menuuest.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menuuest-container').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
