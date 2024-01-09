@@ -219,7 +219,14 @@
       <img src="pildid/soomorollup.jpg" alt="Rollupi mockup" onclick="location.href='soomoreklaam.html';">
     </div>
   </div>
-
+<script>
+    // Laadige menüü HTML-fail
+    fetch('menuuest.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
